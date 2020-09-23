@@ -1,0 +1,1 @@
+The project is to build a form and perform CRUD operations. Here the form is connected to database called crud and it has a table called 'user details'. The attributes of user details table are ID, Name, Location and Email.
