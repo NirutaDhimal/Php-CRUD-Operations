@@ -50,12 +50,13 @@ if(isset($_GET['edit'])){
     $ID = $_GET['edit'];
     $update = true;
     $result = $mysqli->query("SELECT * FROM `user details` WHERE ID = $ID") or die($mysqli->error());
-    if (count( $result ) == 1){
+    
         $row = $result->fetch_array();
         $name = $row['Name'];
         $location = $row['Location'];
         $email = $row['Email'];
-    }
+    
+    
 }
 
 if(isset($_POST['update'])){
